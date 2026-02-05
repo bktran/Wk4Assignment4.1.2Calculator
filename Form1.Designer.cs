@@ -56,7 +56,9 @@
             txtInput.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtInput.ForeColor = SystemColors.Menu;
             txtInput.Location = new Point(13, 117);
+            txtInput.MaxLength = 3;
             txtInput.Name = "txtInput";
+            txtInput.ReadOnly = true;
             txtInput.Size = new Size(234, 71);
             txtInput.TabIndex = 0;
             txtInput.Text = "0";
@@ -75,6 +77,7 @@
             btnEqual.TabIndex = 12;
             btnEqual.Text = "=";
             btnEqual.UseVisualStyleBackColor = false;
+            btnEqual.Click += btnEqual_Click;
             // 
             // btAC
             // 
@@ -87,6 +90,7 @@
             btAC.TabIndex = 18;
             btAC.Text = "AC";
             btAC.UseVisualStyleBackColor = false;
+            btAC.Click += btAC_Click;
             // 
             // txtResult
             // 
@@ -94,7 +98,9 @@
             txtResult.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtResult.ForeColor = Color.WhiteSmoke;
             txtResult.Location = new Point(13, 31);
+            txtResult.MaxLength = 9;
             txtResult.Name = "txtResult";
+            txtResult.ReadOnly = true;
             txtResult.Size = new Size(234, 71);
             txtResult.TabIndex = 19;
             txtResult.Text = "0";
@@ -112,6 +118,7 @@
             btndivide.TabIndex = 20;
             btndivide.Text = "/";
             btndivide.UseVisualStyleBackColor = false;
+            btndivide.Click += btndivide_Click;
             // 
             // btnMultiply
             // 
@@ -125,6 +132,7 @@
             btnMultiply.TabIndex = 21;
             btnMultiply.Text = "*";
             btnMultiply.UseVisualStyleBackColor = false;
+            btnMultiply.Click += btnMultiply_Click;
             // 
             // btnClearInput
             // 
@@ -137,6 +145,7 @@
             btnClearInput.TabIndex = 22;
             btnClearInput.Text = "C";
             btnClearInput.UseVisualStyleBackColor = false;
+            btnClearInput.Click += btnClearInput_Click;
             // 
             // btn7
             // 
@@ -149,6 +158,7 @@
             btn7.TabIndex = 23;
             btn7.Text = "7";
             btn7.UseVisualStyleBackColor = false;
+            btn7.Click += btn7_Click;
             // 
             // btn8
             // 
@@ -161,6 +171,7 @@
             btn8.TabIndex = 24;
             btn8.Text = "8";
             btn8.UseVisualStyleBackColor = false;
+            btn8.Click += btn8_Click;
             // 
             // btn9
             // 
@@ -173,6 +184,7 @@
             btn9.TabIndex = 25;
             btn9.Text = "9";
             btn9.UseVisualStyleBackColor = false;
+            btn9.Click += btn9_Click;
             // 
             // btnPlus
             // 
@@ -186,6 +198,7 @@
             btnPlus.TabIndex = 26;
             btnPlus.Text = "+";
             btnPlus.UseVisualStyleBackColor = false;
+            btnPlus.Click += btnPlus_Click;
             // 
             // btn4
             // 
@@ -198,6 +211,7 @@
             btn4.TabIndex = 27;
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = false;
+            btn4.Click += btn4_Click;
             // 
             // btn5
             // 
@@ -210,6 +224,7 @@
             btn5.TabIndex = 28;
             btn5.Text = "5";
             btn5.UseVisualStyleBackColor = false;
+            btn5.Click += btn5_Click;
             // 
             // btn6
             // 
@@ -222,6 +237,7 @@
             btn6.TabIndex = 29;
             btn6.Text = "6";
             btn6.UseVisualStyleBackColor = false;
+            btn6.Click += btn6_Click;
             // 
             // btnMinus
             // 
@@ -235,6 +251,7 @@
             btnMinus.TabIndex = 30;
             btnMinus.Text = "-";
             btnMinus.UseVisualStyleBackColor = false;
+            btnMinus.Click += btnMinus_Click;
             // 
             // btn1
             // 
@@ -247,6 +264,7 @@
             btn1.TabIndex = 31;
             btn1.Text = "1";
             btn1.UseVisualStyleBackColor = false;
+            btn1.Click += btn1_Click;
             // 
             // btn2
             // 
@@ -259,6 +277,7 @@
             btn2.TabIndex = 32;
             btn2.Text = "2";
             btn2.UseVisualStyleBackColor = false;
+            btn2.Click += btn2_Click;
             // 
             // btn3
             // 
@@ -271,6 +290,7 @@
             btn3.TabIndex = 33;
             btn3.Text = "3";
             btn3.UseVisualStyleBackColor = false;
+            btn3.Click += btn3_Click;
             // 
             // btnDot
             // 
@@ -283,6 +303,7 @@
             btnDot.TabIndex = 34;
             btnDot.Text = ".";
             btnDot.UseVisualStyleBackColor = false;
+            btnDot.Click += btnDot_Click;
             // 
             // btn0
             // 
@@ -295,6 +316,7 @@
             btn0.TabIndex = 35;
             btn0.Text = "0";
             btn0.UseVisualStyleBackColor = false;
+            btn0.Click += btn0_Click;
             // 
             // Form1
             // 
