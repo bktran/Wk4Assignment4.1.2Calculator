@@ -20,11 +20,15 @@ namespace Wk4Assignment4._1._2Calculator
         private void btAC_Click(object sender, EventArgs e)
         {
             calc.AllClear(txtInput, txtResult);
+            result = 0;
+            left = 0;
         }
 
         private void btnClearInput_Click(object sender, EventArgs e)
         {
             calc.ClearLine(txtInput);
+            currentOperation = Operation.None;
+            txtResult.Text = txtResult.Text.TrimEnd('+', '-', 'x', '/');
         }
 
         private void btn1_Click(object sender, EventArgs e)
